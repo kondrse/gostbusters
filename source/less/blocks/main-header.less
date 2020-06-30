@@ -1,10 +1,11 @@
 .main-header {
-  //border: 1px solid red;
   width: 375px;
   min-height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -12,26 +13,24 @@
 }
 
 .main-header__logo {
-  margin-top: 5px;
+  margin-top: 20px;
+  margin-bottom: 8px;
   margin-left: 28px;
 }
 
-.main-header__form {
-  display: none;
-}
-
-.main-header__nav-wrapper {
-  display: flex;
+.main-header__form--closed {
+  //display: none;
 }
 
 .main-header__search {
-  margin-top: 3px;
+  margin-top: 8px;
   margin-left: 188px;
 }
 
 .main-header__nav {
   margin-top: 3px;
-  margin-left: 30px;
+  //margin-left: 30px;
+  background-color: @blue-color;
 }
 
 @media (min-width: @desktop-width) {
@@ -41,6 +40,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    //justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .main-header__logo {
@@ -57,15 +62,24 @@
     left: 34px;
   }
 
-  .main-header__nav-wrapper {
-    min-width: 977px;
+  .main-header__nav {
+    min-width: 307px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 280px;
   }
 
   .main-header__search {
     margin-left: 0;
+    margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -76,6 +90,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     border-left: 1px solid @gray-color;
   }
 
@@ -87,8 +105,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-left: 0;
-    margin-right: 45px;
+    margin-right: 40px;
+    background-color: inherit;
   }
-
 }

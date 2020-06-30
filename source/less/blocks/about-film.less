@@ -1,0 +1,31 @@
+.about-film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-film__trailer {
+  margin: 30px auto;
+  margin-bottom: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .about-film {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 153px;
+    margin-right: auto;
+  }
+
+  .about-film__trailer {
+    margin-top: 80px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

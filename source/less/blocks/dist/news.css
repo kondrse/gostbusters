@@ -1,0 +1,27 @@
+.news {
+  padding-top: 53px;
+}
+.news__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: 28px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+}
+.news__list-cantainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  position: relative;
+}
+.news__list {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 26px;
+}
+.news__list li:not(:first-child) {
+  display: none;
+}

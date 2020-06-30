@@ -1,0 +1,92 @@
+.film-actors {
+  border-top: 1px solid @gray-color;
+}
+
+.film-actors__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 58px;
+}
+
+.film-actors__actors {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: @text-main;
+  margin: 0;
+  margin-left: 28px;
+}
+
+.film-actors__makers {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: @gray-color;
+  margin-left: 22px;
+}
+
+.film-actors__list-wrapper {
+  margin-bottom: 55px;
+}
+
+.film-actors__list {
+  margin-top: 30px;
+}
+
+.film-actors__item {
+  margin-top: 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .film-actors {
+    margin-left: 153px;
+  }
+
+  .film-actors__title-wrapper {
+    margin-top: 69px;
+  }
+
+  .film-actors__actors {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 1px;
+  }
+
+  .film-actors__makers {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    margin-left: 31px;
+  }
+
+  .film-actors__list-wrapper {
+    max-width: 1200px;
+  }
+
+  .film-actors__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .film-actors__item {
+    margin-top: 35px;
+  }
+}
